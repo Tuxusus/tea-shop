@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: tea-shop
+    runtime: php
+    region: frankfurt
+    branch: main
+    plan: free
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:$PORT
+    envVars:
+      - key: PORT
+        value: 10000
+    healthCheckPath: /index.php
+    autoDeploy: true
