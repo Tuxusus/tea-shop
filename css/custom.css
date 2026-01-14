@@ -1,0 +1,137 @@
+:root {
+    --primary-dark: #1e3a2a;
+    --primary-green: #2a5934;
+    --accent-color: #d4a574;
+    --light-bg: #f8f5f0;
+    --text-dark: #333333;
+    --text-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--light-bg);
+    padding-top: 76px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.display-font {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+
+.bg-dark-green {
+    background-color: var(--primary-dark) !important;
+}
+
+.bg-primary-green {
+    background-color: var(--primary-green) !important;
+}
+
+.bg-accent {
+    background-color: var(--accent-color) !important;
+}
+
+.bg-light-custom {
+    background-color: var(--light-bg) !important;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #000;
+}
+
+.btn-accent:hover {
+    background-color: #c09566;
+    border-color: #c09566;
+    color: #000;
+}
+
+.btn-outline-accent {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-outline-accent:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #000;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+.product-category {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.nav-link.active {
+    font-weight: 500;
+    color: var(--accent-color) !important;
+}
+
+.footer {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+.footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.rounded-xl {
+    border-radius: 15px;
+}
+
+.shadow-soft {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+    .product-card img {
+        height: 160px;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
